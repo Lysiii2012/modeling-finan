@@ -23,21 +23,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
 let headerNav = document.querySelector('.header-nav');
-
 let previousScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
 function handleScroll() {
   var currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  
-  if (currentScrollPosition > previousScrollPosition) {
+
+  if (currentScrollPosition > previousScrollPosition && currentScrollPosition > 100) {
     headerNav.classList.add('scrolled-down');
   } else {
     headerNav.classList.remove('scrolled-down');
   }
-  
+
   previousScrollPosition = currentScrollPosition;
 }
 
 window.addEventListener('scroll', handleScroll);
+
