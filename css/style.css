@@ -378,7 +378,7 @@ footer{
     width: 100%;
   }
   .box-form .elementor-field-group{
-    width: 280px;
+    width: 100%;
   }
   p{
     text-align: justify;
@@ -388,5 +388,14 @@ footer{
   }
   .btn_by span{
     font-size: .8rem;
+  }
+  .elementor-widget-container{
+    padding: 16px 14px;
+  }
+  .elementor-form h4{
+    margin-bottom: 14px !important;
+  }
+  .block-form-line{
+    width: 290px;
   }
 }
